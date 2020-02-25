@@ -1,0 +1,7 @@
+{
+  "name": "GlovesApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
