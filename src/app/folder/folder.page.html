@@ -20,7 +20,28 @@
                 <ion-col class="ion-align-self-center">
                     <strong class="capitalize">{{ folder }}</strong>
                     <h1>Morse</h1>
-                    <ion-button class="btn">Pulsar</ion-button>
+                    <ion-row>
+                        <ion-col size="2"></ion-col>
+                        <ion-col size="8">
+                            <ion-button style="border-radius: 1.5rem !important;" class="btn">Pulsar</ion-button>
+                        </ion-col>
+                        <ion-col size="2"></ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col size="1"></ion-col>
+                        <ion-col size="5">
+                            <ion-button style="width: 100%;">
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            </ion-button>
+                        </ion-col>
+                        <ion-col size="5">
+                            <ion-button style="width: 100%;">
+                                <ion-icon name="close-circle-outline"></ion-icon>
+                            </ion-button>
+                        </ion-col>
+                        <ion-col size="1"></ion-col>
+                    </ion-row>
+
                 </ion-col>
             </ion-row>
             <br>
@@ -43,8 +64,31 @@
     </ion-header>
 
     <div id="container">
-        <strong class="capitalize">{{ folder }}</strong>
-        <h1>A</h1>
+        <ion-row>
+            <ion-col size="12">
+                <img src="./assets/ondas.PNG">
+            </ion-col>
+        </ion-row>
+        <ion-row style="margin-top: 50px;">
+            <ion-col size="1"></ion-col>
+            <ion-col size="5">
+                <ion-button style="width: 100%;">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col size="5">
+                <ion-button style="width: 100%;">
+                    <ion-icon name="close-circle-outline"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col size="1"></ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="1"></ion-col>
+            <ion-col size="10"><textarea style="width: 100% !important;" rows="8" placeholder="MORSE"></textarea></ion-col>
+            <ion-col size="1"></ion-col>
+
+        </ion-row>
     </div>
 </ion-content>
 
@@ -56,7 +100,13 @@
     </ion-header>
 
     <div id="container">
-        <strong class="capitalize">{{ folder }}</strong>
-        <h1>B</h1>
+        <ion-row>
+            <ion-col size="12">
+                <h1 style="font-size: 50px; margin-bottom: 40px;">SIMBOLOGÍA ESCRITA Y SONORA</h1>
+            </ion-col>
+        </ion-row>
+        <div>
+            <button style="width: 30px; height: 30px;" *ngFor="let letra of letras">{{letra}}</button>
+        </div>
     </div>
 </ion-content>
